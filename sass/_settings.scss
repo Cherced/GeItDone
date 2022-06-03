@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+$FontTitle: 'Ubuntu', sans-serif;
+$LinearBG:  linear-gradient(180deg, #000000 48.89%, rgba(0, 0, 0, 0) 100%);
+$titleColor: #ffffff;
+$titleSecundaryColor: #555557;
+$boxShadowns: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,37 @@
+{
+  "name": "geitdone",
+  "version": "1.0.0",
+  "description": "A app to check your tasks... auto tracking",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "next test",
+    "lint": "next lint"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cherced/GeItDone.git"
+  },
+  "keywords": [
+    "JS",
+    "REACT",
+    "NEXTJS",
+    "SASS"
+  ],
+  "author": "CHERCED TRISMEGISTO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cherced/GeItDone/issues"
+  },
+  "homepage": "https://github.com/Cherced/GeItDone#readme",
+  "dependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-next": "^12.1.6",
+    "next": "^12.1.6",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.1"
+  }
+}
