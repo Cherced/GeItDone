@@ -1,20 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-export const TodoItem = () => {
+export const TodoItem = (props) => {
   return (
     <div className="TodoItemContainer">
         <div className="todoItem--Check">
-            <input type="checkbox" />
+            <input type="checkbox" checked={props.completed} onChange={props.onComplete}/>
         </div>
         <div className="todoItem--Description">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
+                {props.text}
             </p>
         </div>
         <div className="todoItem--Delete">
-            <button className="btnX">
-                X
-            </button>
+            <button onClick={props.onDelete}> X </button>
         </div>
     </div>
   )

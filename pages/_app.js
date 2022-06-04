@@ -1,10 +1,10 @@
 import "../sass/main.scss";
+import {TodoProvider} from "../logic/TodoContext/index";
+
 function myApp({Component, pageProps}) {
-    return ( <
-        Component {
-            ...pageProps
-        }
-        />
+    return ( <TodoProvider>
+                <Component { ...pageProps } />
+            </TodoProvider>
     )
 }
 
