@@ -2,9 +2,9 @@ import React from 'react';
 
 function TodosLoading() {
   return (
-    <div classname="AnimationLoading">
+    <div className="AnimationLoading">
     <div className="containerLo">
-    <p classname="LoadingTodo-text">Loading TODOs...</p>
+    <p className="LoadingTodo-text">Loading TODOs...</p>
       <div className="loaderLo" />
       </div>
     </div>    
