@@ -2,11 +2,12 @@ import React from 'react';
 
 function TodosLoading() {
   return (
-    <div className="LoadingTodo-container">
-      <span className="LoadingTodo-completeIcon"></span>
-      <p className="LoadingTodo-text">Cargando TODOs...</p>
-      <span className="LoadingTodo-deleteIcon"></span>
-    </div>
+    <div classname="AnimationLoading">
+    <div className="containerLo">
+    <p classname="LoadingTodo-text">Loading TODOs...</p>
+      <div className="loaderLo" />
+      </div>
+    </div>    
   );
 }
 

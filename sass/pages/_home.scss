@@ -1,16 +1,29 @@
 @import '../components/filterSearch';
 @import '../components/headerTodos';
 @import '../components/todoList';
+@import '../components/introCherced';
 
-.HomeContainer{
+.HomeContainer {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     grid-template-rows: repeat(6, minmax(100px, 1fr));
-    grid-template-areas: 
-    "header"
-    "search"
-    "main";
+    grid-template-areas:
+        "header"
+        "search"
+        "main";
     background: $LinearBG;
+    animation: fadeIn 1s ease-in-out;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
 }

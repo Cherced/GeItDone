@@ -87,3 +87,14 @@
     }
 
 }
+
+@media screen and (min-width: 320px) {
+    .FilterSearchContainer .SearchBarContainer .SearchBar input {
+        width: 250px;
+    }
+    .FilterSearchContainer .SearchBarContainer .SearchBarIcon {
+        position: relative;
+        top: -37px;
+        right: 100px;
+    }
+}

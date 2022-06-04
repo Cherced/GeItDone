@@ -1,10 +1,10 @@
 import React from 'react'
-import { TodoList } from '../components/molecules/TodoList'
+import {TodosLoading} from '../components/atoms/TodoIcon/TodosLoading'
 
 const prubs = () => {
   return (
     <div className="prubsContainer">
-        <TodoList />
+        <TodosLoading />
     </div>
   )
 }

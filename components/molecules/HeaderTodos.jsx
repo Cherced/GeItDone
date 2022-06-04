@@ -5,8 +5,10 @@ import { BrandLogo } from '../atoms/BrandLogo'
 export const HeaderTodos = () => {
   return (
     <div className="HeaderTodos">
+      <div className="HeaderTodos-container">
         <TodoCounter />
         <BrandLogo />
+      </div>
     </div>
   )
 }

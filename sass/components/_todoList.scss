@@ -2,7 +2,7 @@
     grid-area: main;
     grid-column: 1/4;
     grid-row: 4;
-    height: 450px;
+    height: 510px;
     display: flex;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -40,8 +40,10 @@
         .todoItem--Description {
             width: 60%;
             padding: 0 20px;
+            height: auto;
 
             p {
+                height: auto;
                 font-family: $FontTitle;
                 font-style: normal;
                 font-weight: 400;
@@ -70,5 +72,12 @@
 
         }
 
+    }
+}
+
+@media screen and (min-width: 320px){
+    .TodoListContainer .TodoItemContainer .todoItem--Description {
+        padding: 0 10px;
+        height: auto;
     }
 }
