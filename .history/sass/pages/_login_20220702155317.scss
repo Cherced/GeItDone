@@ -1,0 +1,20 @@
+.entryContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    img{
+        margin-bottom: 50px;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        border-radius: 30px;
+        font-family: $titleColor;
+        color: $titleColor;
+        font-size: 18px;
+    }
+}

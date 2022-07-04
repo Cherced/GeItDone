@@ -1,0 +1,19 @@
+.info-User-Container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .boxModel-User{
+        z-index: 10;
+        width: 320px;
+        display: flex;
+        top: 0;
+        left: calc(100% - 50%);
+        height: 60px;
+        background: #2D2D2F;
+        border-radius: 0 0 35px 35px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+}

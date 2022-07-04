@@ -1,0 +1,100 @@
+.FilterSearchContainer {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: search;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    box-shadow: $boxShadowns;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .SearchBarContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 30px;
+
+        .SearchBar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            input {
+                width: 320px;
+                padding-left: 50px;
+                height: 50px;
+                background: #2D2D2F;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(4px);
+                border-radius: 22px;
+            }
+
+            img {
+                position: relative;
+                right: 315px;
+            }
+
+        }
+
+        .SearchBarIcon {
+            position: relative;
+            top: -37px;
+            right: 135px;
+        }
+
+    }
+
+    .ListFilterConteiner {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        max-width: 600px;
+
+        .buttonOption {
+            background: transparent;
+            width: 50%;
+            height: 70px;
+
+            h1 {
+                color: $titleColor;
+                font-family: $FontTitle;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+            }
+
+            border-top: none;
+            border-bottom: 1px solid $titleColor;
+        }
+    }
+
+    .done {
+        border-left: none;
+        border-right: 0.5px solid $titleColor;
+    }
+
+    .stats {
+        border-right: none;
+        border-left: 0.5px solid $titleColor;
+    }
+
+}
+
+@media screen and (min-width: 320px) {
+    .FilterSearchContainer .SearchBarContainer .SearchBar input {
+        width: 250px;
+    }
+    .FilterSearchContainer .SearchBarContainer .SearchBarIcon {
+        position: relative;
+        top: -37px;
+        right: 100px;
+    }
+}

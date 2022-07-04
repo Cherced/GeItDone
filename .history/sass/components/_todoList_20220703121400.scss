@@ -1,0 +1,80 @@
+.TodoListContainer {
+    height: 322px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $boxShadowns;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    .TodoItemContainer {
+        width: 80%;
+        margin: 50px 0;
+        border-radius: 35px;
+        background: $titleColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .todoItem--Check {
+            width: 20%;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid black;
+            input{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .todoItem--Description {
+            width: 60%;
+            padding: 0 20px;
+            height: auto;
+
+            p {
+                height: auto;
+                font-family: $FontTitle;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 18px;
+
+                color: #000000;
+            }
+
+
+        }
+
+        .todoItem--Delete {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid black;
+            button{
+                width: 35px;
+                height: 35px;
+                border-radius: 35px;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (min-width: 320px){
+    .TodoListContainer .TodoItemContainer .todoItem--Description {
+        padding: 0 10px;
+        height: auto;
+    }
+}

@@ -1,0 +1,51 @@
+.List-Tasks-Container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .TaskContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            color: #ffffff;
+            font-family: "Ubuntu", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 18px;
+        }
+        .completed{
+
+        }
+        .incompleted{
+
+        }
+
+        .Completed-taskList--Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 190px;
+            width: 200px;
+        }
+    
+        .unCompleted-taskList--Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 190px;
+            width: 200px;
+        }
+    }
+
+   
+}

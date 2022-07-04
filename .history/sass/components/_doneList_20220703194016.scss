@@ -1,0 +1,152 @@
+.List-Tasks-Container {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .TaskContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #ffffff;
+            font-family: "Ubuntu", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 18px;
+            animation: shadownText 3s ease-in-out infinite;
+        }
+
+        .completed {
+            width: 20%;
+            color: aqua;
+            margin-right: 50px;
+        }
+
+        .incompleted {
+            color: red;
+            margin-right: 50px;
+            width: 20%;
+        }
+
+        .Completed-taskList--Container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: auto;
+            width: 20%;
+            background: linear-gradient(270deg, #0c3f70, #eaeaea, #2381ee, #e3e5e8, #9abcee, #5888ce, #d9e2f0, #9aa1ac, #dfecff, #d3d6db, #679aee, #679aee);
+            background-size: 2400% 2400%;
+            border-radius: 30px;
+
+
+            -moz-animation: AnimationName 30s ease infinite;
+            animation: AnimationName 30s ease infinite;
+
+            ul {
+                padding: 10px;
+                list-style-type: none;
+                width: 80%;
+                display: flex;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                li {
+                    margin: 5px;
+                    background: grey;
+                    width: 90%;
+                    height: auto;
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+        }
+
+        @-moz-keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes AnimationName {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+    }
+
+    .unCompleted-taskList--Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: auto;
+        width: 20%;
+        border-radius: 30px;
+
+        background: linear-gradient(270deg, #b93737, #e1e1e1, #e1b4b4, #fdfdfd, #ee3333, #ececec, #f2b3b3, #f0f0f0, #f26d6d, #f0e2e2, #f0e2e2, #f0e2e2, #f0e2e2);
+        background-size: 2600% 2600%;
+
+        -webkit-animation: AnimationName 30s ease infinite;
+        animation: AnimationName 30s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 50%
+        }
+
+        50% {
+            background-position: 100% 50%
+        }
+
+        100% {
+            background-position: 0% 50%
+        }
+    }
+}

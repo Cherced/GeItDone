@@ -1,0 +1,13 @@
+.info-User-Container{
+    z-index: 10;
+    width: 350px;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: calc(100%-41%);
+    height: 60px;
+    background: white;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: space-evenly;
+}

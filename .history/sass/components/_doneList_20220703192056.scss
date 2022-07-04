@@ -1,0 +1,99 @@
+.List-Tasks-Container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .TaskContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            color: #ffffff;
+            font-family: "Ubuntu", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 18px;
+        }
+
+        .completed {
+            color: linear-gradient(270deg, #ffffff, #b8dfea, #76cee6, #d9e9ee, #46c4ec, #d8f4fd, #1db5e6, #cae7f0, #00abe1, #00abe1, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+            
+            -webkit-animation: completed 30s ease infinite;
+            -moz-animation: completed 30s ease infinite;
+            animation: completed 30s ease infinite;
+        }
+
+        @-webkit-keyframes completed {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes completed {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes completed {
+            0% {
+                background-position: 0% 50%
+            }
+
+            50% {
+                background-position: 100% 50%
+            }
+
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+    
+
+    .incompleted {}
+
+    .Completed-taskList--Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 190px;
+        width: 200px;
+    }
+
+    .unCompleted-taskList--Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 190px;
+        width: 200px;
+    }
+}
+
+
+}

@@ -1,0 +1,29 @@
+.List-Tasks-Container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    :nth-child(odd) {
+        padding-right: 50px;
+    }
+
+    .Completed-taskList--Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 190px;
+    }
+
+    .unCompleted-taskList--Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 190px;
+    }
+}

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+$FontTitle: 'Ubuntu',
+sans-serif;
+$LinearBG: linear-gradient(180deg, #000000 48.89%, rgba(0, 0, 0, 0) 100%);
+$titleColor: #ffffff;
+$titleSecundaryColor: #555557;
+$boxShadowns: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Icon-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+
+  /* background-color: #CCC; */
+}
+
+.Icon-container--check {
+  position: absolute;
+  left: 12px;
+}
+
+.Icon-container--delete {
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+
+.Icon-svg {
+  width: 24px;
+  height: 24px;
+  transition: fill .15s;
+}
+
+.Icon-container:hover {
+  .Icon-svg--check {
+    fill: #4caf50;
+  }
+
+  .Icon-svg--delete {
+    fill: red;
+  }
+}
+
+.TodoItem {
+  background-color: #FAFAFA;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+}
+
+.TodoItem-p {
+  color: #1E1E1F;
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.LoadingTodo-text{
+  position: relative;
+  top: 170px;
+  left: 83px;
+  font-family: 'Ubuntu';
+  font-size: 25px;
+}
+
+form {
+  width: 90%;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 33px 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #1E1E1F;
+  margin-bottom: 26px;
+  font-family: $FontTitle;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+textarea {
+  background-color: #F9FBFC;
+  border: 2px solid #202329;
+  border-radius: 20px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: #1E1E1F;
+  font-size: 20px;
+  text-align: center;
+  padding: 12px;
+  height: 150px;
+  width: calc(100% - 25px);
+  font-family: $FontTitle;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+textarea::placeholder {
+  color: #A5A5A5;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+textarea:focus {
+  outline-color: #61DAFA;
+}
+
+.TodoForm-buttonContainer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.TodoForm-button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  color: #202329;
+  font-weight: 400;
+  width: 120px;
+  height: 48px;
+  border-radius: 2px;
+  border: none;
+  font-family: $FontTitle;
+}
+
+.TodoForm-button--add {
+  background: $titleSecundaryColor;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+}
+
+.TodoForm-button--cancel {
+  background: transparent;
+}
+
+.ModalBackground {
+  background: rgba(32,35,41,.8);
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.CreateTodoButton {
+  background-color: $titleSecundaryColor;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-weight: bold;
+  color: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+
+  transform: rotate(0);
+  transition: .3s ease;
+  z-index: 1;
+}
+
+.CreateTodoButton:hover {
+  transform: rotate(224deg);
+}
+
+.firstTodo{
+  margin-top: 200px;
+  font-size: 30px;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 600;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.AnimationLoading {
+  width: 90%;
+  margin: 0px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  .titleNoFinish {
+    width: 70%;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #555557;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+.containerLo {
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+	background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgb(220, 220, 220) 40%, rgb(170, 170, 170) 98%, rgb(10, 10, 10) 100%);
+	position: relative;
+}
+.loaderLo {
+	
+}
+
+.loaderLo:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+	border-bottom: 0 solid #ffffff05;
+	
+	box-shadow: 
+		0 -10px 20px 20px #ffffff40 inset,
+		0 -5px 15px 10px #ffffff50 inset,
+		0 -2px 5px #ffffff80 inset,
+		0 -3px 2px #ffffffBB inset,
+		0 2px 0px #ffffff,
+		0 2px 3px #ffffff,
+		0 5px 5px #ffffff90,
+		0 10px 15px #ffffff60,
+		0 10px 20px 20px #ffffff40;
+	filter: blur(3px);
+	animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg)
+	}
+}

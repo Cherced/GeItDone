@@ -1,0 +1,27 @@
+@import '../components/filterSearch';
+@import '../components/headerTodos';
+@import '../components/todoList';
+@import '../components/introCherced';
+@import '../components/userInfo';
+@import '../components/doneList';
+
+.HomeContainer {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $LinearBG;
+    animation: fadeIn 1s ease-in-out;
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+}
